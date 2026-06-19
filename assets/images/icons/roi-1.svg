@@ -1,0 +1,8 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" width="42" height="42">
+	<defs>
+		<image  width="42" height="36" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAkCAMAAADIF1gZAAAAAXNSR0IB2cksfwAAAD9QTFRFAAAA////////////////////////////////////////////////////////////////////////////////Q7v6agAAABV0Uk5TAI9AIL//cN9/7xCvMJBvz2BQn4BfYXlAsgAAATdJREFUeJyN0393giAUBuB7AWdH07b1/b9hbWu1ciqUGhflYih/6OXwHH68CsKqhmgA10CJiPUqKhID93YN3ejuofC6SLNu6b5ps0S3jbFznxdo2bQ0+ylKs5saOwkKKk0g5fY66eWYUNlw+VG1027xmr4hCLKqW1JHZgVIaVOmjzZG3/9sUR4hTqWyk4p/WKCfZ1vkP0+6p5Ejn5RitJNGfpe8tsVwphh1Zyq+YIH6QQ3UHWt3mMryRoU7w0ghvYySB8WoqrWreVCMgpD0J7mgshPM0v6u2QXotEa/oNDeh1cYVEhBVv2TgpruPqBDZBsCpfexOVXyMhfUHO3+/N1MUD4Vxn+PeQQ01WxoGpRPGxfRs3lBMQr7X2/POkKhqMaBkt8KdrfcB+VBDTSlqh/L6JJA8R3QB0xZaVU+9zCmAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
