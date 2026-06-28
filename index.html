@@ -39,17 +39,12 @@
           .ranch-brand:hover {
             color: #fff;
           }
-          .ranch-brand-mark {
-            display: inline-grid;
-            place-items: center;
-            width: 42px;
-            height: 42px;
-            border: 2px solid #d5a200;
-            border-radius: 50%;
-            color: #d5a200;
-            font-weight: 800;
-            font-size: 13px;
-            letter-spacing: .04em;
+          .ranch-brand-logo {
+            display: block;
+            width: 48px;
+            height: 48px;
+            flex: 0 0 48px;
+            object-fit: contain;
           }
           .ranch-brand-title {
             display: block;
@@ -281,10 +276,10 @@
               display: inline-block;
               max-width: 210px;
             }
-            .ranch-brand-mark {
-              width: 36px;
-              height: 36px;
-              font-size: 11px;
+            .ranch-brand-logo {
+              width: 40px;
+              height: 40px;
+              flex-basis: 40px;
             }
             .ranch-brand-title {
               font-size: 15px;
@@ -322,7 +317,7 @@
     <div class="row align-items-center justify-content-between">
       <div class="col-xl-2 col-auto flex-shrink-0 site-header-brand">
         <a href="#home" class="ranch-brand" aria-label="Ranch Capital home">
-          <span class="ranch-brand-mark">RC</span>
+          <img src="assets/images/imglogo-transparent.png" alt="" class="ranch-brand-logo">
           <span class="ranch-brand-title">Ranch<br>Capital</span>
         </a>
       </div>
@@ -370,7 +365,7 @@
   <div class="ot-mobile-menu">
     <div class="ot-mobile-menu-top">
       <a href="#home" class="ranch-brand" aria-label="Ranch Capital home">
-        <span class="ranch-brand-mark">RC</span>
+        <img src="assets/images/imglogo-transparent.png" alt="" class="ranch-brand-logo">
         <span class="ranch-brand-title">Ranch<br>Capital</span>
       </a>
       <button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="ot-mobile-menu-close-btn">
@@ -1136,7 +1131,7 @@
     <div class="container">
         <div class="footer-top-wrapper">
             <div class="footer-about-widget reveal-item">
-                <a href="#home" class="footer-logo ranch-brand" aria-label="Ranch Capital home"><span class="ranch-brand-mark">RC</span><span class="ranch-brand-title">Ranch<br>Capital</span></a>
+                <a href="#home" class="footer-logo ranch-brand" aria-label="Ranch Capital home"><img src="assets/images/imglogo-transparent.png" alt="" class="ranch-brand-logo"><span class="ranch-brand-title">Ranch<br>Capital</span></a>
                 <p class="mb-4">Ranch Capital provides real estate and business funding solutions for investors, brokers, and business owners. Through Real Estate Ranch, we connect people with capital, relationships, and opportunities.</p>
                 <h3 class="footer-widget-title">Funding Notice</h3>
                 <p class="mb-0">Funding availability, terms, and approvals are subject to underwriting, eligibility, and program guidelines. Ranch Capital does not guarantee funding, approval, rates, returns, or investment outcomes.</p>
