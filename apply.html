@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="home-2">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Apply for real estate or business funding with Ranch Capital Lending.">
+  <title>Apply for Funding | Ranch Capital Lending</title>
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/apply.css">
+</head>
+<body class="apply-body">
+  <header class="apply-header">
+    <div class="container">
+      <div class="apply-header-inner">
+        <a href="index.html" class="ranch-brand" aria-label="Ranch Capital Lending home">
+          <img src="assets/images/imglogo-transparent.png" alt="" class="ranch-brand-logo">
+          <span class="ranch-brand-title">Ranch Capital<br>Lending</span>
+        </a>
+        <nav class="apply-header-nav" aria-label="Application navigation">
+          <a href="index.html#loan-programs">Loan Programs</a>
+          <a href="index.html#broker-partners">Broker Partners</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="apply-shell">
+    <div class="container">
+      <section class="apply-hero" aria-labelledby="apply-title">
+        <span class="apply-kicker"><i class="fa-solid fa-file-signature"></i> Funding Application</span>
+        <h1 id="apply-title" class="apply-title">Ranch Capital Application</h1>
+        <p class="apply-copy">Share the funding request, borrower details, and deal information. Ranch Capital will use this intake to review the opportunity and identify the right next step.</p>
+      </section>
+
+      <div class="apply-layout">
+        <form class="apply-form-card" data-apply-wizard action="#" method="post" accept-charset="UTF-8">
+          <div class="apply-hidden" aria-hidden="true">
+            <label for="website">Website</label>
+            <input type="text" name="website" id="website" autocomplete="off" tabindex="-1">
+          </div>
+
+          <div class="wizard-progress">
+            <div class="wizard-progress-top">
+              <h2 class="wizard-progress-title">Application Intake</h2>
+              <span class="wizard-progress-count" data-wizard-count>Step 1 of 5</span>
+            </div>
+            <div class="wizard-progress-bar" aria-hidden="true">
+              <span class="wizard-progress-fill" data-wizard-progress></span>
+            </div>
+          </div>
+
+          <div class="wizard-steps" aria-label="Application steps">
+            <button type="button" class="wizard-step-tab" data-wizard-tab aria-current="step"><span>1</span> Program</button>
+            <button type="button" class="wizard-step-tab" data-wizard-tab aria-current="false"><span>2</span> Borrower</button>
+            <button type="button" class="wizard-step-tab" data-wizard-tab aria-current="false"><span>3</span> Entity</button>
+            <button type="button" class="wizard-step-tab" data-wizard-tab aria-current="false"><span>4</span> Deal</button>
+            <button type="button" class="wizard-step-tab" data-wizard-tab aria-current="false"><span>5</span> Sign</button>
+          </div>
+
+          <div class="wizard-content">
+            <section class="wizard-step is-active" data-wizard-step>
+              <div class="wizard-step-header">
+                <h2>Loan Program</h2>
+                <p>Select the funding path and basic request details.</p>
+              </div>
+              <div class="apply-grid">
+                <div class="apply-field full">
+                  <label for="loan_application_loan_program">What type of loan program do you need? *</label>
+                  <select required name="loan_application[loan_program]" id="loan_application_loan_program">
+                    <option value="">Select...</option>
+                    <option value="fix_and_flip">Fix and Flip</option>
+                    <option value="bridge">Bridge</option>
+                    <option value="construction">Construction</option>
+                    <option value="multifamily">Multifamily</option>
+                    <option value="other_types_commercial">Other Types - Commercial</option>
+                    <option value="dscr">DSCR</option>
+                    <option value="business_funding">Business Funding</option>
+                    <option value="transactional_funding">Transactional Funding</option>
+                  </select>
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_requested_amount">Requested loan amount *</label>
+                  <input required type="text" name="loan_application[requested_amount]" id="loan_application_requested_amount" placeholder="$250,000">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_timeline">Funding timeline *</label>
+                  <select required name="loan_application[timeline]" id="loan_application_timeline">
+                    <option value="">Select...</option>
+                    <option value="asap">ASAP</option>
+                    <option value="7_14_days">7-14 days</option>
+                    <option value="15_30_days">15-30 days</option>
+                    <option value="30_plus_days">30+ days</option>
+                  </select>
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_purchase_or_refi">Request type</label>
+                  <select name="loan_application[purchase_or_refi]" id="loan_application_purchase_or_refi">
+                    <option value="">Select...</option>
+                    <option value="purchase">Purchase</option>
+                    <option value="refinance">Refinance</option>
+                    <option value="cash_out">Cash-out refinance</option>
+                    <option value="working_capital">Working capital</option>
+                  </select>
+                </div>
+                <div class="apply-field full">
+                  <label for="loan_application_scenario_summary">Brief scenario summary *</label>
+                  <textarea required name="loan_application[scenario_summary]" id="loan_application_scenario_summary" placeholder="Tell us what you are trying to fund, the deal stage, and any important deadline."></textarea>
+                </div>
+              </div>
+            </section>
+
+            <section class="wizard-step" data-wizard-step hidden>
+              <div class="wizard-step-header">
+                <h2>Primary Applicant</h2>
+                <p>Provide the main borrower or contact information for this request.</p>
+              </div>
+              <div class="apply-grid">
+                <div class="apply-field third">
+                  <label for="loan_application_first_name">First name *</label>
+                  <input required type="text" name="loan_application[first_name]" id="loan_application_first_name">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_middle_name">Middle name</label>
+                  <input type="text" name="loan_application[middle_name]" id="loan_application_middle_name">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_last_name">Last name *</label>
+                  <input required type="text" name="loan_application[last_name]" id="loan_application_last_name">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_email">Email *</label>
+                  <input required type="email" name="loan_application[email]" id="loan_application_email">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_phone">Phone *</label>
+                  <input required type="tel" name="loan_application[phone]" id="loan_application_phone">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_street_address">Street address</label>
+                  <input type="text" name="loan_application[street_address]" id="loan_application_street_address">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_city">City</label>
+                  <input type="text" name="loan_application[city]" id="loan_application_city">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_state">State</label>
+                  <input type="text" name="loan_application[state]" id="loan_application_state" maxlength="2" placeholder="TX">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_zip">Zip code</label>
+                  <input type="text" name="loan_application[zip]" id="loan_application_zip">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_date_of_birth">Date of birth</label>
+                  <input type="date" name="loan_application[date_of_birth]" id="loan_application_date_of_birth">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_citizenship_status">Citizenship status</label>
+                  <select name="loan_application[citizenship_status]" id="loan_application_citizenship_status">
+                    <option value="">Select...</option>
+                    <option value="us_citizen">US Citizen</option>
+                    <option value="perm_resident">Permanent Resident</option>
+                    <option value="non_perm_resident">Non-Permanent Resident</option>
+                    <option value="foreign_national">Foreign National</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_preferred_contact_method">Preferred contact</label>
+                  <select name="loan_application[preferred_contact_method]" id="loan_application_preferred_contact_method">
+                    <option value="">Select...</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                    <option value="text">Text</option>
+                  </select>
+                </div>
+              </div>
+              <div class="apply-note">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>This page does not collect full Social Security numbers. Full borrower verification should happen through a secure lender process.</span>
+              </div>
+            </section>
+
+            <section class="wizard-step" data-wizard-step hidden>
+              <div class="wizard-step-header">
+                <h2>Borrower Type</h2>
+                <p>Tell us whether the application is under an individual or business entity.</p>
+              </div>
+              <div class="apply-grid">
+                <div class="apply-field full">
+                  <fieldset class="apply-radio-group">
+                    <legend>Borrower type *</legend>
+                    <div class="apply-radio-row">
+                      <label class="apply-choice">
+                        <input required type="radio" value="individual" name="loan_application[borrower_type]">
+                        Individual
+                      </label>
+                      <label class="apply-choice">
+                        <input required type="radio" value="entity" name="loan_application[borrower_type]">
+                        Entity
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+              <div class="apply-grid apply-hidden" data-show-if="borrower_type" data-show-value="entity">
+                <div class="apply-field">
+                  <label for="loan_application_entity_name">Entity name *</label>
+                  <input required type="text" name="loan_application[entity_name]" id="loan_application_entity_name">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_entity_type">Entity type</label>
+                  <select name="loan_application[entity_type]" id="loan_application_entity_type">
+                    <option value="">Select...</option>
+                    <option value="llc">LLC</option>
+                    <option value="s_corporation">S Corporation</option>
+                    <option value="c_corporation">C Corporation</option>
+                    <option value="limited_partnership">Limited Partnership</option>
+                    <option value="general_partnership">General Partnership</option>
+                    <option value="llp">LLP</option>
+                    <option value="trust">Trust</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_federal_tax_id">Federal tax ID / EIN</label>
+                  <input type="text" name="loan_application[federal_tax_id]" id="loan_application_federal_tax_id">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_business_phone">Business phone</label>
+                  <input type="tel" name="loan_application[business_phone]" id="loan_application_business_phone">
+                </div>
+                <div class="apply-field full">
+                  <label for="loan_application_business_street_address">Business address</label>
+                  <input type="text" name="loan_application[business_street_address]" id="loan_application_business_street_address">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_business_city">Business city</label>
+                  <input type="text" name="loan_application[business_city]" id="loan_application_business_city">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_business_state">Business state</label>
+                  <input type="text" name="loan_application[business_state]" id="loan_application_business_state" maxlength="2" placeholder="TX">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_business_zip">Business zip code</label>
+                  <input type="text" name="loan_application[business_zip]" id="loan_application_business_zip">
+                </div>
+              </div>
+            </section>
+
+            <section class="wizard-step" data-wizard-step hidden>
+              <div class="wizard-step-header">
+                <h2>Property and Deal</h2>
+                <p>Add the collateral, numbers, and exit plan if this request is tied to real estate.</p>
+              </div>
+              <div class="apply-grid">
+                <div class="apply-field full">
+                  <label for="loan_application_subject_property_address">Subject property address</label>
+                  <input type="text" name="loan_application[subject_property_address]" id="loan_application_subject_property_address" placeholder="Street address, city, state, zip">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_property_type">Property type</label>
+                  <select name="loan_application[property_type]" id="loan_application_property_type">
+                    <option value="">Select...</option>
+                    <option value="single_family">Single family</option>
+                    <option value="two_to_four_units">2-4 units</option>
+                    <option value="multifamily">Multifamily</option>
+                    <option value="commercial">Commercial</option>
+                    <option value="land">Land</option>
+                    <option value="business_only">Business only</option>
+                  </select>
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_purchase_price">Purchase price</label>
+                  <input type="text" name="loan_application[purchase_price]" id="loan_application_purchase_price" placeholder="$350,000">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_estimated_value">Estimated value / ARV</label>
+                  <input type="text" name="loan_application[estimated_value]" id="loan_application_estimated_value" placeholder="$500,000">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_rehab_budget">Rehab / build budget</label>
+                  <input type="text" name="loan_application[rehab_budget]" id="loan_application_rehab_budget" placeholder="$75,000">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_current_debt">Current debt</label>
+                  <input type="text" name="loan_application[current_debt]" id="loan_application_current_debt" placeholder="$0">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_exit_strategy">Exit strategy</label>
+                  <select name="loan_application[exit_strategy]" id="loan_application_exit_strategy">
+                    <option value="">Select...</option>
+                    <option value="sell">Sell</option>
+                    <option value="refinance">Refinance</option>
+                    <option value="hold_rental">Hold as rental</option>
+                    <option value="business_revenue">Business revenue</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="apply-field full">
+                  <label for="loan_application_documents_ready">Documents available</label>
+                  <textarea name="loan_application[documents_ready]" id="loan_application_documents_ready" placeholder="Purchase contract, scope of work, rent roll, bank statements, entity docs, payoff, appraisal, or other files available."></textarea>
+                </div>
+              </div>
+            </section>
+
+            <section class="wizard-step" data-wizard-step hidden>
+              <div class="wizard-step-header">
+                <h2>Experience and Signature</h2>
+                <p>Finish with borrower experience, consent, and electronic signature.</p>
+              </div>
+              <div class="apply-grid">
+                <div class="apply-field third">
+                  <label for="loan_application_completed_projects">Completed projects</label>
+                  <input type="number" min="0" name="loan_application[completed_projects]" id="loan_application_completed_projects">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_current_properties">Current properties owned</label>
+                  <input type="number" min="0" name="loan_application[current_properties]" id="loan_application_current_properties">
+                </div>
+                <div class="apply-field third">
+                  <label for="loan_application_liquidity">Estimated liquidity</label>
+                  <input type="text" name="loan_application[liquidity]" id="loan_application_liquidity" placeholder="$50,000">
+                </div>
+                <div class="apply-field full">
+                  <label for="loan_application_real_estate_owned_summary">Schedule of real estate owned</label>
+                  <textarea name="loan_application[real_estate_owned_summary]" id="loan_application_real_estate_owned_summary" placeholder="List properties owned or recently completed, including address, acquisition price, current value, debt, and disposition if sold."></textarea>
+                </div>
+                <div class="apply-field full">
+                  <label for="loan_application_additional_notes">Additional notes</label>
+                  <textarea name="loan_application[additional_notes]" id="loan_application_additional_notes" placeholder="Anything else Ranch Capital should know before reviewing the request."></textarea>
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_signature_name">Electronically signed by *</label>
+                  <input required type="text" name="loan_application[signature_name]" id="loan_application_signature_name">
+                </div>
+                <div class="apply-field">
+                  <label for="loan_application_signature_date">Date *</label>
+                  <input required type="date" name="loan_application[signature_date]" id="loan_application_signature_date">
+                </div>
+                <div class="apply-field full">
+                  <label class="apply-choice">
+                    <input required type="checkbox" name="loan_application[consent]" value="accepted">
+                    I confirm the information provided is accurate and authorize Ranch Capital Lending to contact me about this funding request.
+                  </label>
+                </div>
+              </div>
+            </section>
+
+            <div class="wizard-actions">
+              <div class="wizard-actions-left">
+                <button type="button" class="apply-secondary-btn" data-wizard-prev hidden>
+                  <i class="fa-solid fa-arrow-left"></i>
+                  Back
+                </button>
+              </div>
+              <div class="wizard-actions-right">
+                <button type="button" class="btn btn-theme-primary rounded-0" data-wizard-next>
+                  Continue
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button type="submit" class="btn btn-theme-primary rounded-0" data-wizard-submit hidden>
+                  Submit Application
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="apply-submit-status" data-submit-status tabindex="-1">
+              Application captured on this page. Connect this form to email or your backend to send the data.
+            </div>
+          </div>
+        </form>
+
+        <aside class="apply-side-panel" aria-labelledby="apply-side-title">
+          <div class="apply-side-panel-top">
+            <h2 id="apply-side-title">Have These Ready</h2>
+            <p>The right details help Ranch Capital review the request faster.</p>
+          </div>
+          <ul class="apply-side-list">
+            <li>
+              <i class="fa-solid fa-house-chimney"></i>
+              <div>
+                <strong>Deal basics</strong>
+                Property address, purchase price, value, and timeline.
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-file-contract"></i>
+              <div>
+                <strong>Documents</strong>
+                Contract, scope of work, rent roll, payoff, or business records.
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-line"></i>
+              <div>
+                <strong>Experience</strong>
+                Recent projects, current portfolio, and liquidity.
+              </div>
+            </li>
+            <li>
+              <i class="fa-solid fa-handshake"></i>
+              <div>
+                <strong>Next step</strong>
+                Ranch Capital will review the scenario and follow up.
+              </div>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="apply-footer">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <p class="mb-0">&copy; 2026 Ranch Capital Lending. All rights reserved.</p>
+      <a href="index.html">Back to Home</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/apply-wizard.js"></script>
+</body>
+</html>
